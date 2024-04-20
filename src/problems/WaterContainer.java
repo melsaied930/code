@@ -1,7 +1,5 @@
 package problems;
 
-import java.util.Scanner;
-
 /*
 https://leetcode.com/problems/container-with-most-water/description/
 11. Container With Most Water
@@ -20,7 +18,6 @@ Example 2:
 
 Input: height = [1,1]
 Output: 1
-
 * */
 public class WaterContainer {
     public static void main(String[] args) {
@@ -28,11 +25,7 @@ public class WaterContainer {
         int i = 0, j = input.length - 1, max = 0;
         while (i < j) {
             max = Math.max(max, (Math.min(input[i], input[j]) * (j - i)));
-//            System.out.println(Math.min(input[i], input[j])  *  (j - i));
-//            System.out.println((Math.min(input[i], input[j]))*(Math.abs(input[i] - input[j])));
-//            System.out.println(Math.abs(input[i] - input[j]));
-//            System.out.println(input[i] + "-" + input[j]);
-            if ((input[i] <= input[j])) {
+            if (input[i] <= input[j]) {
                 i++;
             } else {
                 j--;
