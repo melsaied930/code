@@ -41,7 +41,7 @@ import java.util.Map;
 
 public class TwoSum1 {
     public static void main(String[] args) {
-        int[] nums = {2, 5, 7, 11, 5, 15, 1};
+        int[] nums = {2, 5, 7, 11, 15, 1};
         int target = 16;
         int[] out;
         Map<Integer, Integer> map = new LinkedHashMap<>();

@@ -22,15 +22,15 @@ Output: 1
 public class WaterContainer {
     public static void main(String[] args) {
         int[] input = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-        int i = 0, j = input.length - 1, max = 0;
+        int i = 0, j = input.length - 1, container = 0;
         while (i < j) {
-            max = Math.max(max, (Math.min(input[i], input[j]) * (j - i)));
+            container = Math.max(container, (Math.min(input[i], input[j]) * (j - i)));
             if (input[i] <= input[j]) {
                 i++;
             } else {
                 j--;
             }
         }
-        System.out.println(max);
+        System.out.println(container);
     }
 }
